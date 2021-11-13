@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3272A8FE-7486-4062-B094-FB700054BD08}" SchemaVersion="103">
+	<SoundcasterSessions>
+		<WorkUnit Name="Default Work Unit" ID="{3272A8FE-7486-4062-B094-FB700054BD08}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Spiegel" ID="{50889E6B-5C6D-4254-BBB8-7419C15E6D68}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="FM 01" ID="{8ED96B85-04D5-497E-9202-F7FD0E19131F}" WorkUnitID="{D9329DB3-E4D7-45AA-BD40-6EB28C6C4D39}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="meterSwitch" ID="{05A9A466-A886-4D3A-9316-D6EC89613C75}" WorkUnitID="{91397819-D263-4350-8355-E776F219EE68}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="meterSwitch" ID="{F5B1E9B3-1E8C-4E8A-84DF-8934AE8FAE95}" WorkUnitID="{2A5B0650-1FEA-408E-B4FC-D72C7E11214D}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Tintinnabulli" ID="{079CBC74-4F12-4DCF-9F0A-B1CE75893D0E}" WorkUnitID="{91397819-D263-4350-8355-E776F219EE68}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="SpiegelMelody" ID="{477703E4-0FED-40F5-B00B-E867D3EB02DC}"/>
+							<Value>-24.3</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Mvoice_Transpose" ID="{338B01FB-FB24-41E2-BE9F-3E1EB4792BE1}"/>
+							<Value>-24</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="ChordMvoice_Transpose" ID="{2D84A5D4-13D0-486F-A970-F224377C704F}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Tvoice_Transpose" ID="{9BA75366-E31E-4F49-8834-53F2963AADDE}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="ChordMinus6_Transpose" ID="{0562E3F2-AC2B-4FD1-93EB-F6B55A130DC6}"/>
+							<Value>-12</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="A4" ID="{F3F3A556-4750-44A6-B9AC-77DCD0ED9AB7}"/>
+						<CurrentSwitchRef Name="A4" ID="{91299E5B-1879-4502-A870-BB6689573DB6}"/>
+						<CurrentSwitchRef Name="Mvoice_Spiegel" ID="{800D0FEC-D449-4D3F-9475-AD18BF63432E}"/>
+						<CurrentSwitchRef Name="C4" ID="{05B90424-AE10-4CC5-BB58-03360D0CA319}"/>
+						<CurrentSwitchRef Name="F4" ID="{A0D29993-5FA9-4111-96D8-750DDC0D6BCD}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{798E7FF4-EDB9-4033-9E07-11521FD21BFB}" SchemaVersion="103">
+	<Modulators>
+		<WorkUnit Name="Default Work Unit" ID="{798E7FF4-EDB9-4033-9E07-11521FD21BFB}" PersistMode="Standalone">
+			<ChildrenList>
+				<ModulatorEnvelope Name="ADSR" ID="{2FE98284-4B84-4A8F-8F01-D8BE635AF6B7}" ShortID="374919087">
+					<PropertyList>
+						<Property Name="EnvelopeAttackTime" Type="Real64" Value="0"/>
+						<Property Name="EnvelopeReleaseTime" Type="Real64" Value="0.637"/>
+					</PropertyList>
+				</ModulatorEnvelope>
+			</ChildrenList>
+		</WorkUnit>
+	</Modulators>
+</WwiseDocument>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{534B8F4B-A269-4530-8F26-4B34974B4599}" SchemaVersion="103">
+	<Effects>
+		<WorkUnit Name="Default Work Unit" ID="{534B8F4B-A269-4530-8F26-4B34974B4599}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="silenceGain" ID="{49D53588-0F37-4AB4-A630-AF9DCFB9313A}" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+					<PropertyList>
+						<Property Name="FullBandGain" Type="Real32" Value="-96.3"/>
+						<Property Name="LFEGain" Type="Real32" Value="-96.3"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="TintinnibuMeter" ID="{E715B897-7F5D-41F6-AC26-60B241032AE6}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+					<PropertyList>
+						<Property Name="Max" Type="Real32" Value="10.9">
+							<RTPCList>
+								<RTPC Name="" ID="{823F9BBE-BE2E-4283-B6D9-09540EE7AB53}" ShortID="507710427">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="SpiegelMelody" ID="{477703E4-0FED-40F5-B00B-E867D3EB02DC}" WorkUnitID="{E336BBA8-C84F-4B68-8677-19F7DDAE28A4}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{3F97A3C8-2BD2-406C-B3C5-BADA19F6AFE9}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="1"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>-48</XPos>
+												<YPos>0</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="MeterMode" Type="int32" Value="1"/>
+						<Property Name="Min" Type="Real32" Value="-96.3"/>
+						<Property Name="ReleaseTime" Type="Real32" Value="6.26"/>
+					</PropertyList>
+					<PluginData>
+	<GameParameter Name="SpiegelMelody" ID="{477703E4-0FED-40F5-B00B-E867D3EB02DC}"/>
+</PluginData>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
+	</Effects>
+</WwiseDocument>

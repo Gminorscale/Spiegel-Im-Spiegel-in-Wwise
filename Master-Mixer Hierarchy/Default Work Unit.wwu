@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{99B3D475-EE0B-43F3-8D18-7647A46E1605}" SchemaVersion="103">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{99B3D475-EE0B-43F3-8D18-7647A46E1605}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<PropertyList>
+						<Property Name="BusVolume" Type="Real64">
+							<ValueList>
+								<Value>-9</Value>
+							</ValueList>
+						</Property>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>5</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{20257612-2E52-4281-BE71-A656EED7E36B}" WorkUnitID="{13485C3B-9DF6-4638-8DC3-FD2C2ECCE311}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Violin" ID="{602C1B57-1552-444D-BEF6-A03DD78DC27D}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ChildrenList>
+								<AuxBus Name="Reverb" ID="{AB4F4DCF-4ABF-4191-BE17-A0222199FB27}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Hall_Medium_Dark" ID="{626B6E38-739B-4689-819F-F81AD3788BDE}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</AuxBus>
+							</ChildrenList>
+							<ObjectLists/>
+						</Bus>
+						<Bus Name="MeterBus" ID="{BE07F7CC-6EE3-46FD-9208-0F8CAA78E850}">
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+									<ObjectRef Name="silenceGain" ID="{49D53588-0F37-4AB4-A630-AF9DCFB9313A}" WorkUnitID="{534B8F4B-A269-4530-8F26-4B34974B4599}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AuxBus Name="meterAUX" ID="{DA573811-324B-4155-97E0-948A4CF23FDD}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+											<ObjectRef Name="TintinnibuMeter" ID="{E715B897-7F5D-41F6-AC26-60B241032AE6}" WorkUnitID="{534B8F4B-A269-4530-8F26-4B34974B4599}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</AuxBus>
+							</ChildrenList>
+							<ObjectLists/>
+						</Bus>
+						<Bus Name="Piano" ID="{DC37A839-97E6-43AA-BEB1-AE16C8CC45B4}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{4AA5DCA3-E029-45B4-ACD3-192432937223}" ShortID="902393332">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="SpiegelMelody" ID="{477703E4-0FED-40F5-B00B-E867D3EB02DC}" WorkUnitID="{E336BBA8-C84F-4B68-8677-19F7DDAE28A4}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{F586A776-A748-4B2A-9F12-FDC195E5FB69}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>-48</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>-47.999</XPos>
+														<YPos>-200</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>-47.998</XPos>
+														<YPos>-200</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>-24.73847</XPos>
+														<YPos>0.18638</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-0.77691</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ObjectLists/>
+						</Bus>
+						<Bus Name="Violin_Rootnote" ID="{74E4072E-6953-41B0-8402-5DB03C3D1ED7}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="meterAUX" ID="{DA573811-324B-4155-97E0-948A4CF23FDD}" WorkUnitID="{99B3D475-EE0B-43F3-8D18-7647A46E1605}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</Bus>
+					</ChildrenList>
+					<ObjectLists/>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>
